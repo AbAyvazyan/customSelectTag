@@ -18,8 +18,6 @@ function addSelectElementHandler({optionName=[]}){
     selectOptions.className = 'select_options'
 
 
-    console.log('top',selectElement.getOffset())
-
     selectShow.addEventListener('click',function (){
         if (selectOptions.style.display === 'block'){
             selectOptions.style.display = 'none'
@@ -52,6 +50,54 @@ function addSelectElementHandler({optionName=[]}){
 }
 
 
+addSelectElementHandler({
+    optionName:[
+        {
+            id:1,
+            name:'JavaScript'
+        },
+        {
+            id:2,
+            name:'JavaScript'
+        },
+        {
+            id:3,
+            name:'JavaScript'
+        },
+        {
+            id:4,
+            name:'JavaScript'
+        },
+        {
+            id:5,
+            name:'JavaScript'
+        }
+    ]
+})
+addSelectElementHandler({
+    optionName:[
+        {
+            id:1,
+            name:'JavaScript'
+        },
+        {
+            id:2,
+            name:'JavaScript'
+        },
+        {
+            id:3,
+            name:'JavaScript'
+        },
+        {
+            id:4,
+            name:'JavaScript'
+        },
+        {
+            id:5,
+            name:'JavaScript'
+        }
+    ]
+})
 addSelectElementHandler({
     optionName:[
         {

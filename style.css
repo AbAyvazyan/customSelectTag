@@ -2,17 +2,17 @@
     width: 900px;
     min-height: 500px;
     margin: 5vh auto 0;
-    border: 2px solid black;
+    /*border: 2px solid rgb(57, 90, 143);*/
     position: relative;
     color: white;
-
+    box-shadow: rgb(57, 90, 143) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .select_element{
     width: 100%;
     min-height: 50px;
     padding: 15px 0;
-    /*position: relative;*/
+    position: relative;
     /*z-index: 1;*/
 }
 
@@ -36,6 +36,15 @@
     background: rgb(57, 90, 143);
     position: absolute;
     left: 225px;
+    z-index: 3;
+}
+
+.container > .select_element:nth-last-child(-n+3) > .select_options{
+    bottom: 65px;
+}
+
+.open_from_top{
+    bottom: 65px;
 }
 
 .single_option{
